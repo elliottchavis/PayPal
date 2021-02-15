@@ -35,14 +35,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMs-aF-jY2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qMs-aF-jY2">
                                 <rect key="frame" x="0.0" y="44" width="375" height="956"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWI-iu-Kuz">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="956"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-FN-ZhF">
+                                                <rect key="frame" x="20" y="45" width="335" height="214"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayPal Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vf-8u-fGe">
+                                                        <rect key="frame" x="30" y="15" width="134" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-6O-MRU">
+                                                        <rect key="frame" x="291" y="15" width="24" height="22"/>
+                                                        <state key="normal" image="more_icon"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150,201.39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szq-ls-f0q">
+                                                        <rect key="frame" x="30" y="53" width="205.5" height="45.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="38"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nav-dk-pU4">
+                                                        <rect key="frame" x="30" y="113.5" width="67.5" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="0Vf-8u-fGe" firstAttribute="top" secondItem="8Uv-FN-ZhF" secondAttribute="top" constant="15" id="2xA-HO-tgz"/>
+                                                    <constraint firstItem="Szq-ls-f0q" firstAttribute="top" secondItem="0Vf-8u-fGe" secondAttribute="bottom" constant="15" id="5gw-qs-tEj"/>
+                                                    <constraint firstItem="0Vf-8u-fGe" firstAttribute="leading" secondItem="8Uv-FN-ZhF" secondAttribute="leading" constant="30" id="6Ta-9l-KVK"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nav-dk-pU4" secondAttribute="trailing" constant="30" id="8Qt-D8-Mdz"/>
+                                                    <constraint firstItem="nav-dk-pU4" firstAttribute="top" secondItem="Szq-ls-f0q" secondAttribute="bottom" constant="15" id="EXV-D6-xU1"/>
+                                                    <constraint firstItem="Szq-ls-f0q" firstAttribute="leading" secondItem="8Uv-FN-ZhF" secondAttribute="leading" constant="30" id="Hdp-DM-qsa"/>
+                                                    <constraint firstItem="q2c-6O-MRU" firstAttribute="top" secondItem="8Uv-FN-ZhF" secondAttribute="top" constant="15" id="N2S-gT-HBb"/>
+                                                    <constraint firstItem="nav-dk-pU4" firstAttribute="leading" secondItem="8Uv-FN-ZhF" secondAttribute="leading" constant="30" id="V0q-XV-KjY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="q2c-6O-MRU" secondAttribute="trailing" constant="20" id="cao-SY-m9V"/>
+                                                    <constraint firstItem="q2c-6O-MRU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Vf-8u-fGe" secondAttribute="trailing" constant="10" id="cvH-yG-unO"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Szq-ls-f0q" secondAttribute="trailing" constant="30" id="jIq-0m-jCL"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="8Uv-FN-ZhF" secondAttribute="bottom" constant="697" id="11W-56-XYC"/>
+                                            <constraint firstItem="8Uv-FN-ZhF" firstAttribute="leading" secondItem="cWI-iu-Kuz" secondAttribute="leading" constant="20" id="DOE-f3-MGf"/>
                                             <constraint firstAttribute="width" constant="375" id="Jm9-sG-TOh"/>
+                                            <constraint firstItem="8Uv-FN-ZhF" firstAttribute="top" secondItem="cWI-iu-Kuz" secondAttribute="top" constant="45" id="OLD-7f-vTY"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Uv-FN-ZhF" secondAttribute="trailing" constant="20" id="V64-zF-cYJ"/>
                                             <constraint firstAttribute="height" constant="956" id="Y5Y-IZ-JU2"/>
                                         </constraints>
                                     </view>
@@ -73,6 +121,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="more_icon" width="24" height="6"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
