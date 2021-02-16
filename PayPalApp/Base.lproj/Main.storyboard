@@ -370,6 +370,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="FSK-Wp-gxr"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="balanceView" destination="8Uv-FN-ZhF" id="HVE-d5-NeL"/>
+                        <outlet property="getMoreView" destination="8GN-4F-o0y" id="bdQ-IY-dHJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqU-tO-OZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
