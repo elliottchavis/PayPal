@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="1124" y="-853.22338830584715"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="IfR-0S-gTH">
             <objects>
-                <viewController id="GG1-qi-hPK" sceneMemberID="viewController">
+                <viewController id="GG1-qi-hPK" customClass="MainViewController" customModule="PayPalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eq0-bK-h6f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
